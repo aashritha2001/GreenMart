@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenMart</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="../extras.css" />
+    <link rel="stylesheet" type="text/css" href="../shopping-cart.css" />
+</head>
+
+<body>
+    <div class="header">
+        <a class="logo-wrapper" href="../index.html"><img class="logo-img" /></a>
+        <h1>GreenMart</h1>
+        <a class="user-wrapper" href="./Account.html"><img class="user-img" /></a>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+        <a href="../index.html">Home</a>
+        <a href="FreshProduce.html">Fresh Produce</a>
+        <a href="Frozen.html">Frozen</a>
+        <a href="Pantry.html">Pantry</a>
+        <a href="Breakfast.html">Breakfast & Cereal</a>
+        <a href="Baking.html">Baking</a>
+        <a href="Snacks.html">Snacks</a>
+        <a href="Candy.html">Candy</a>
+        <a href="Specialty.html">Specialty Shops</a>
+        <a href=#content>Deals</a>
+        <a href="Account.html" >My Account</a>
+        <a href="About.html" class="active">About Us</a>
+        <a href="Contact.html">Contact Us</a>
+    </div>
+    <div class="content-wrap">
+        <div class="main">
+            <h3>About Us</h3>
+
+            <h4>Select a location to learn more about hours of operation</h4>
+            <div class="radio-buttons">
+                <input type="radio" name="location" id="newyork" class="location-radio" hidden>
+                <label for="newyork" class="location-label">New York</label>
+
+                <input type="radio" name="location" id="losangeles" class="location-radio" hidden>
+                <label for="losangeles" class="location-label">Los Angeles</label>
+
+                <input type="radio" name="location" id="chicago" class="location-radio" hidden>
+                <label for="chicago" class="location-label">Chicago</label>
+            </div> 
+
+            <div class="hours-container">
+                <div class="hours-info">
+                    <div class="locations" id="newyork-info">
+                        
+                        <h2>New York Location</h2>
+                        <ul>
+                            <li>Operating Hours: Monday to Friday, 9 AM - 6 PM</li>
+                            <li>Address: 123 Main Street</li>
+                            <li>City: New York, NY</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="hours">
+                <div class="location-info" id="newyork-info">
+                    
+                    <h2>New York Location</h2>
+                    <ul>
+                        <li>Operating Hours: Monday to Friday, 9 AM - 6 PM</li>
+                        <li>Address: 123 Main Street</li>
+                        <li>City: New York, NY</li>
+                    </ul>
+                </div>
+
+                <div class="location-info" id="losangeles-info">
+                    <h2>Los Angeles Location</h2>
+                    <ul>
+                        <li>Operating Hours: Monday to Friday, 8 AM - 7 PM</li>
+                        <li>Address: 456 Oak Avenue</li>
+                        <li>City: Los Angeles, CA</li>
+                    </ul>
+                </div>
+
+                <div class="location-info" id="chicago-info">
+                    <h2>Chicago Location</h2>
+                    <ul>
+                        <li>Operating Hours: Monday to Friday, 10 AM - 5 PM</li>
+                        <li>Address: 789 Elm Street</li>
+                        <li>City: Chicago, IL</li>
+                    </ul>
+                    <p>Operating Hours: Monday to Friday, 10 AM - 5 PM</p>
+                    <p>Address: 789 Elm Street, Chicago, IL</p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div class="side">
+            <h1 id="cart">Shopping Cart</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th><strong>Product</strong></th>
+                        <th><strong>Price</strong></th>
+                        <th><strong>Quantity</strong></th>
+                        <th><strong>Total</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Strawberries</strong></td>
+                        <td>$5.27</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>$5.27</td>
+
+                    </tr>
+                    <tr>
+                        <td><strong>Oranges</strong></td>
+                        <td>$4.28</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>$9.56</td>
+
+                    </tr>
+                    <tr>
+                        <td><strong>Drumstick Ice Cream Cones...</strong></td>
+                        <td>$6.73</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>$6.73</td>
+
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><strong>Total</strong></td>
+                        <td colspan="2">$21.56</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <button class="cart-buy">Begin Checkout</button>
+        </div>
+    </div>
+
+    <div class="footer">
+
+
+    </div>
+</body>
+
+</html>

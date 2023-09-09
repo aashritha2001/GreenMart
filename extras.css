@@ -1,0 +1,112 @@
+/* About Us page */
+
+.location-info {
+    display:none;
+}
+
+.location-radio:checked ~ .location-label + .location-info {
+    display: block;
+   
+}
+
+.radio-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.hours{
+    display: flex;
+    justify-content: center;
+}
+
+.hours-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #306D4E;
+}
+
+.hours-container li{
+    font-style: italic;
+}
+
+.hours-info{
+    background-color: #F9F1CB;
+    
+    border-width: 5px;
+    border-style: solid;
+    border-color: #306D4E;
+    
+    width: 35%;
+    height: 25%;
+    color: #306D4E;
+    vertical-align: middle;
+    border-radius: 20px;
+    padding: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+
+
+/* Contact Us Page */
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #306D4E;
+}
+.contact-us{
+    background-color: #F9F1CB;
+    border: 5px solid #306D4E;
+    width: 25%;
+    height: 20%;
+    
+    vertical-align: middle;
+    border-radius: 20px;
+    padding: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.steps-contact{
+    background-color: #F9F1CB;
+    border: 5px solid #306D4E;
+    width: 35%;
+    height: 25%;
+    vertical-align: middle;
+    border-radius: 20px;
+    padding: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+dl {
+    margin-top: 20px ;
+    margin-bottom: 20px; 
+}
+
+dt {
+    font-weight: bold; 
+    margin-bottom: 10px;
+}
+
+dd {
+    margin-left: 0; 
+    margin-bottom: 10px; 
+}
+
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}

@@ -26,8 +26,8 @@ This project is a web application for an online grocery store, developed using H
 
 ## Screenshots
 
-<!-- ![Screenshot 1](insert_screenshot_url_here)
-![Screenshot 2](insert_screenshot_url_here) -->
+![Homepage](./img/util/homepage-ss.png)
+![Breakfast Page](./img/util/Breakfast-ss.png)
 
 ## Installation
 

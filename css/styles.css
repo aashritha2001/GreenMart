@@ -38,11 +38,11 @@
     background-size: cover;
     transition: background-image 0.2s ease-in-out;
     border: 10px soli6d #04AA6D;
-    background-image: url('./img/util/leaf-icon.png');
+    background-image: url('../img/util/leaf-icon.png');
 }
 
 .logo-img:hover {
-    background-image: url('./img/util/hover-logo.png');
+    background-image: url('../img/util/hover-logo.png');
 }
 
 .user-img{
@@ -51,12 +51,12 @@
     background-size: cover;
     transition: background-image 0.2s ease-in-out;
     border: 1px solid #04AA6D;
-    background-image: url('./img/util/user-icon.png'); 
+    background-image: url('../img/util/user-icon.png'); 
     
 }
 
 .user-img:hover{
-    background-image: url('./img/util/hover-user.png');
+    background-image: url('../img/util/hover-user.png');
 }
 
 

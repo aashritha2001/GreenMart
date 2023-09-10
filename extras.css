@@ -19,6 +19,7 @@
 
 .hours{
     display: flex;
+    visibility: hidden;
     justify-content: center;
 }
 

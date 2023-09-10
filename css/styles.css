@@ -84,7 +84,7 @@
     height: 50px;
     position: absolute;
     bottom: 0;
-    background-image: url("./img/util/footer-img.jpeg"); 
+    background-image: url("../img/util/footer-img.jpeg"); 
     background-repeat: repeat;
     opacity: 0.8;
     

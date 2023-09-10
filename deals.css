@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: space-between;
     color: #306D4E;
-
+    border: 4px dashed #ddd;
 }
 
 .deal-details, .coupon {
@@ -22,7 +22,7 @@
 }
 
 .coupon {
-    border-left: 2px dotted #ddd; /* Add a border between sections */
+    border-left: 2px dashed #ddd; /* Add a border between sections */
     padding-left: 10px;
     text-align: center;
 }

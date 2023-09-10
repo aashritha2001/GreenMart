@@ -60,4 +60,7 @@ input[type="number"] {
     background-color: #FFD400;
 }
 
+.cart-buy:active{
+    background-color: #FC8C79;
+}
 

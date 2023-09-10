@@ -181,19 +181,23 @@
 
 /* Main section item cards */
 
+.item-wrapper{
+    max-width: 100%;
+    overflow-x: auto;
+}
+
 .item-card {
-     /* border: 2px solid #04AA6D;  */
     background-color: white;
     padding: 10px;
     text-align: center;
     margin: 10px;
     max-width: 250px;
-    box-shadow: 0 2px 4px #306D4E; /* Add shadow */
+    box-shadow: 0 2px 4px #306D4E; 
 }
 
 .item-card img {
     width: 250px;
-    height: 220px; /* Set a fixed height for the images */
+    height: 220px; 
     object-fit: cover; 
 }
 

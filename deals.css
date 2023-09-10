@@ -1,0 +1,36 @@
+
+.deals-card {
+    background-color: #F9F1CB;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    /* max-width: 300px; */
+    width: 500px;
+    height: 100px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #306D4E;
+
+}
+
+.deal-details, .coupon {
+    width: 45%; /* Adjust width as needed */
+    text-align: center;
+}
+
+.coupon {
+    border-left: 2px dotted #ddd; /* Add a border between sections */
+    padding-left: 10px;
+    text-align: center;
+}
+
+.deals-card h2{
+    color: #306D4E;
+}
+
+.deals-card p{
+    color: black;
+}

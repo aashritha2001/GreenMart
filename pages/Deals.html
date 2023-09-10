@@ -1,65 +1,63 @@
-<!-- Aashritha Ananthula, AXA180116, CS 6314 section 1 -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <link rel="stylesheet" type="text/css" href="./shopping-cart.css" />
     <title>GreenMart</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="../account.css" />
+    <link rel="stylesheet" type="text/css" href="../shopping-cart.css" />
+    <link rel="stylesheet" type="text/css" href="../deals.css" /> 
 </head>
 
 <body>
-
     <div class="header">
-        <a class="logo-wrapper" href="index.html" rel="icon"><img class="logo-img" /></a>
+        <a class="logo-wrapper" href="../index.html"><img class="logo-img" /></a>
         <h1>GreenMart</h1>
-        <a class="user-wrapper" href="./pages/Account.html"><img class="user-img" /></a>
+        <a class="user-wrapper" href="./Account.html"><img class="user-img" /></a>
     </div>
 
     <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Home</a>
-        <a href="pages/FreshProduce.html">Fresh Produce</a>
-        <a href="pages/Frozen.html">Frozen</a>
-        <a href="pages/Pantry.html">Pantry</a>
-        <a href="pages/Breakfast.html">Breakfast & Cereal</a>
-        <a href="pages/Baking.html">Baking</a>
-        <a href="pages/Snacks.html">Snacks</a>
-        <a href="./pages/Candy.html">Candy</a>
-        <a href="./pages/Specialty.html">Specialty Shops</a>
-        <a href="./pages/Deals.html">Deals</a>
-        <a href="pages/Account.html">My Account</a>
-        <a href="pages/About.html">About Us</a>
-        <a href="pages/Contact.html">Contact Us</a>
+        <a href="../index.html">Home</a>
+        <a href="FreshProduce.html">Fresh Produce</a>
+        <a href="Frozen.html">Frozen</a>
+        <a href="Pantry.html">Pantry</a>
+        <a href="Breakfast.html">Breakfast & Cereal</a>
+        <a href="Baking.html">Baking</a>
+        <a href="Snacks.html">Snacks</a>
+        <a href="Candy.html">Candy</a>
+        <a href="Specialty.html">Specialty Shops</a>
+        <a href="Deals.html" class="active">Deals</a>
+        <a href="Account.html">My Account</a>
+        <a href="About.html">About Us</a>
+        <a href="Contact.html">Contact Us</a>
     </div>
     <div class="content-wrap">
         <div class="main">
-
-            <h3>Featured Products</h3>
-            <div class="item-wrapper">
-                <div class="item-card">
-                    <img src="./img/products/freshproduce.jpeg" alt="Fresh Produce">
-                    <h4>Fresh Produce</h4>
-                    <p> Fruits and Vegetables</p>
-                    <a href="./pages/FreshProduce.html"><button class="add-to-cart">Explore</button></a>
+            <h3>Deals</h3>
+            <div class="deals-card">
+                
+                <div class="deal-details">
+                    <h2>Veggie Deal</h2>
+                    <p>10% off all Fresh Produce</p>
                 </div>
-                <div class="item-card">
-                    <img src="./img/products/bakery.jpeg" alt="Bakery">
-                    <h4>Baking</h4>
-                    <p>Baked goods, cake mixes</p>
-                    <a href="./pages/Baking.html"><button class="add-to-cart">Explore</button></a>
+                <div class="coupon">
+                    <h2>Coupon</h2>
+                    <p>VEGGIE10</p>
                 </div>
-                <div class="item-card">
-                    <img src="./img/products/specialties.jpeg" alt="Specialties">
-                    <h4>Specialties</h4>
-                    <p> Assorted wines and cheeses</p>
-                    <a href="./pages/Specialty.html"><button class="add-to-cart">Explore</button></a>
+                
+            </div>
+            <div class="deals-card">
+                <div class="deal-details">
+                    <h2>Snacks Deal</h2>
+                    <p>Buy 1 Get 1 Free</p>
+                </div>
+                <div class="coupon">
+                    <h2>Coupon</h2>
+                    <p>SNACKY123</p>
                 </div>
             </div>
-
-
         </div>
         <div class="side">
             <h1 id="cart">Shopping Cart</h1>
@@ -105,8 +103,8 @@
                 </table>
 
             </div>
-            <button class="cart-buy">Begin Checkout</button>
 
+            <button class="cart-buy">Begin Checkout</button>
         </div>
     </div>
 
@@ -114,7 +112,6 @@
 
 
     </div>
-
 </body>
 
 </html>

@@ -7,12 +7,20 @@
     <title>GreenMart</title>
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <link rel="stylesheet" type="text/css" href="../css/shopping-cart.css" />
+    <link rel="stylesheet" type="text/css" href="../css/filter.css" />
+    <script src="../js/filter.js"></script>
+    <script src="../js/cart.js"></script>
 </head>
 
 <body>
     <div class="header">
         <a class="logo-wrapper" href="../index.html"><img class="logo-img"/></a>
         <h1>GreenMart</h1>
+        <div class="time-container">
+            <h1 id="date"></h1>
+            <h1 id="time"></h1>
+        </div>
+        <script src="../js/timer.js"></script>
         <a class="user-wrapper" href="./Account.html"><img class="user-img"/></a> 
     </div>
 
@@ -30,6 +38,7 @@
         <a href="Account.html">My Account</a>
         <a href="About.html">About Us</a>
         <a href="Contact.html">Contact Us</a>
+        <a href="Cart.html">Cart</a>
     </div>
     <div class="content-wrap">
         <div class="main">
@@ -38,34 +47,62 @@
                 <input type="text" class="search-input" placeholder="Search...">
                 <button class="search-button">Search</button>
             </div>
+
+            <div id="filterContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Shop all</button>
+                <button class="btn" onclick="filterSelection('frozenBreakfast')"> Frozen Breakfast</button>
+                <button class="btn" onclick="filterSelection('frozenDessert')"> Frozen Dessert</button>
+                <button class="btn" onclick="filterSelection('frozenMeals')"> Frozen Meals</button>
+                <button class="btn" onclick="filterSelection('frozenPizza')"> Frozen Pizza</button>
+                <button class="btn" onclick="filterSelection('frozenMeat')"> Frozen Meat</button>
+                <button class="btn" onclick="filterSelection('frozenSnacks')"> Frozen Snacks</button>
+                <button class="btn" onclick="filterSelection('rollbacks')"> Rollbacks</button>
+            </div>
+
+
             <div class="item-wrapper">
-                <div class="item-card">
+                <div class="item-card frozenDessert" id="frozen1">
                     <img src="../img/products/ice-cream.jpeg" alt="Ice-cream">
                     <h4>Drumstick Ice Cream Cones</h4>
                     <p> Chocolate Sundae, 8 ct.</p>
                     <span class="price">$6.73</span>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Drumstick Ice Cream Cones', 6.73, 'frozen1')">Add to Cart</button>
                 </div>
-                <div class="item-card">
+                <div class="item-card frozenSnacks" id="frozen2">
                     <img src="../img/products/fries-frozen.webp" alt="Fries">
                     <h4>Arby's Seasoned Curly Fries</h4>
                     <p>22 oz (Frozen)</p>
                     <span class="price">$4.72</span>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Arbys Seasoned Curly Fries', 4.72, 'frozen2')">Add to Cart</button>
                 </div>
-                <div class="item-card">
+                <div class="item-card frozenPizza" id="frozen3">
                     <img src="../img/products/pizza.webp" alt="Pizza">
                     <h4>Red Baron Frozen Pizza </h4>
                     <p> Classic Crust, 20.60 oz</p>
                     <span class="price">$4.28</span>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Red Baron Frozen Pizza', 4.28, 'frozen3')">Add to Cart</button>
                 </div>
             </div>
         </div>
         <div class="side">
             <h1 id="cart">Shopping Cart</h1>
             <div class="table-container">
-                <table>
+                <table id="shopping-cart-side">
                     <thead>
                         <tr>
                             <th><strong>Product</strong></th>
@@ -74,40 +111,27 @@
                             <th><strong>Total</strong></th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="cart-body">
                         <tr>
-                            <td><strong>Strawberries</strong></td>
-                            <td>$5.27</td>
-                            <td><input type="number" value="1" min="1"></td>
-                            <td>$5.27</td>
+                            <td><strong>Cart is Empty</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             
-                        </tr>
-                        <tr>
-                            <td><strong>Oranges</strong></td>
-                            <td>$4.28</td>
-                            <td><input type="number" value="1" min="1"></td>
-                            <td>$9.56</td>
-                            
-                        </tr>
-                        <tr>
-                            <td><strong>Drumstick Ice Cream Cones...</strong></td>
-                            <td>$6.73</td>
-                            <td><input type="number" value="1" min="1"></td>
-                            <td>$6.73</td>
-                            
-                        </tr>
+                        </tr> 
                     </tbody>
                     <tfoot>
                         <tr>
                             <td colspan="3"><strong>Total</strong></td>
-                            <td colspan="2">$21.56</td>
+                            <td colspan="2">$0.00</td>
                         </tr>
                     </tfoot>
                 </table>
 
             </div>
 
-            <button class="cart-buy">Begin Checkout</button>
+            <button class="cart-buy" onclick="window.location.href='Cart.html'">Begin Checkout</button>
+            <button class="cart-buy" onclick="emptyCart()">Empty Cart</button> 
         </div>
     </div>
 

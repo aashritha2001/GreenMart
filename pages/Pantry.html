@@ -7,12 +7,20 @@
     <title>GreenMart</title>
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <link rel="stylesheet" type="text/css" href="../css/shopping-cart.css" />
+    <link rel="stylesheet" type="text/css" href="../css/filter.css" />
+    <script src="../js/filter.js"></script>
+    <script src="../js/cart.js"></script>
 </head>
 
 <body>
     <div class="header">
         <a class="logo-wrapper" href="../index.html"><img class="logo-img"/></a>
         <h1>GreenMart</h1>
+        <div class="time-container">
+            <h1 id="date"></h1>
+            <h1 id="time"></h1>
+        </div>
+        <script src="../js/timer.js"></script>
         <a class="user-wrapper" href="./Account.html"><img class="user-img"/></a> 
     </div>
 
@@ -30,6 +38,7 @@
         <a href="Account.html">My Account</a>
         <a href="About.html">About Us</a>
         <a href="Contact.html">Contact Us</a>
+        <a href="Cart.html">Cart</a>
     </div>
     <div class="content-wrap">
         <div class="main">
@@ -39,35 +48,60 @@
                 <input type="text" class="search-input" placeholder="Search...">
                 <button class="search-button">Search</button>
             </div>
+            
+            <div id="filterContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Shop all</button>
+                <button class="btn" onclick="filterSelection('cannedGoods')"> Canned Goods</button>
+                <button class="btn" onclick="filterSelection('cannedVegetables')"> Canned Vegetables</button>
+                <button class="btn" onclick="filterSelection('condiments')"> Condiments</button>
+                <button class="btn" onclick="filterSelection('spreads')"> Spreads</button>
+                <button class="btn" onclick="filterSelection('pastaPizza')"> Pasta&Pizza</button>
+                <button class="btn" onclick="filterSelection('rollbacks')"> Rollbacks</button>
+            </div>
 
             <div class="item-wrapper">
-                <div class="item-card">
+                <div class="item-card pastaPizza" id="pantry1">
                     <img src="../img/products/pasta.jpeg" alt="Pasta">
                     <h4>Banza Chickpea Rotini</h4>
                     <p> 8 oz</p>
                     <span class="price">$3.31</span>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Banza Chickpea Rotini', 3.31, 'pantry1')">Add to Cart</button>
                 </div>
-                <div class="item-card">
+                <div class="item-card cannedVegetables" id="pantry2">
                     <img src="../img/products/tomato-paste.webp" alt="Tomato paste">
                     <h4>Hunt's Tomato Paste</h4>
                     <p> 6 oz</p>
                     <span class="price">$0.92</span>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Hunts Tomato Paste', 0.92, 'pantry2')">Add to Cart</button>
                 </div>
-                <div class="item-card">
+                <div class="item-card condiments" id="pantry3">
                     <img src="../img/products/peppers.webp" alt="Peppers">
                     <h4>Crushed Red Peppers</h4>
                     <p> 1.5 oz</p>
                     <span class="price">$2.27</span>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart"  onclick="addToCart('Crushed Red Peppers', 2.27, 'pantry3')">Add to Cart</button>
                 </div>
             </div>
         </div>
         <div class="side">
             <h1 id="cart">Shopping Cart</h1>
             <div class="table-container">
-                <table>
+                <table id="shopping-cart-side">
                     <thead>
                         <tr>
                             <th><strong>Product</strong></th>
@@ -76,40 +110,27 @@
                             <th><strong>Total</strong></th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="cart-body">
                         <tr>
-                            <td><strong>Strawberries</strong></td>
-                            <td>$5.27</td>
-                            <td><input type="number" value="1" min="1"></td>
-                            <td>$5.27</td>
+                            <td><strong>Cart is Empty</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             
-                        </tr>
-                        <tr>
-                            <td><strong>Oranges</strong></td>
-                            <td>$4.28</td>
-                            <td><input type="number" value="1" min="1"></td>
-                            <td>$9.56</td>
-                            
-                        </tr>
-                        <tr>
-                            <td><strong>Drumstick Ice Cream Cones...</strong></td>
-                            <td>$6.73</td>
-                            <td><input type="number" value="1" min="1"></td>
-                            <td>$6.73</td>
-                            
-                        </tr>
+                        </tr> 
                     </tbody>
                     <tfoot>
                         <tr>
                             <td colspan="3"><strong>Total</strong></td>
-                            <td colspan="2">$21.56</td>
+                            <td colspan="2">$0.00</td>
                         </tr>
                     </tfoot>
                 </table>
 
             </div>
 
-            <button class="cart-buy">Begin Checkout</button>
+            <button class="cart-buy" onclick="window.location.href='Cart.html'">Begin Checkout</button>
+            <button class="cart-buy" onclick="emptyCart()">Empty Cart</button> 
         </div>
     </div>
 

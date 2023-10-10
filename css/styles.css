@@ -27,8 +27,8 @@
 
 .user-wrapper{
     width: 40px;
-    height: 40px;
-    padding-left: 75%; 
+    height: 40px; 
+    padding-left: 1%; 
 }
 
 .logo-img{
@@ -82,12 +82,11 @@
     color: white;
     width: 100%;
     height: 50px;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    bottom: 0px; 
     background-image: url("../img/util/footer-img.jpeg"); 
     background-repeat: repeat;
     opacity: 0.8;
-    
 }
 
 .name-info{
@@ -145,7 +144,8 @@
     background-color: #D0FBE1;
     float: right;
     width: 73%;
-    height: 79vh;
+    height: auto;
+    min-height: 83vh;
     text-align: center;
     /* border-radius: 20px; */
     margin-left: 0rem;
@@ -198,6 +198,8 @@
 .item-wrapper{
     max-width: 100%;
     overflow-x: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .item-card {
@@ -234,6 +236,37 @@
     justify-content: space-evenly;
 }
 
+/* Counter */
+.counter {
+    padding-top: 5px;
+    width: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.counter input {
+    width: 33px;
+    border: 0;
+    line-height: 25px;
+    font-size: 20px;
+    text-align: center;
+    border: 3px solid #306D4E;
+    border-radius: 10px;
+    background: white;
+    color: #306D4E;
+    appearance: none;
+    outline: 0;
+}
+.counter span {
+    display: block;
+    font-size: 20px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #306D4E;
+    user-select: none;
+}
+
 .add-to-cart {
     display: block;
     margin: 10px auto;
@@ -263,12 +296,15 @@
     color: white;
     float: left;
     width: 25%;
-    height: 79vh;
+    height: auto;
+    min-height: 83vh;
     /* border-radius: 20px; */
     margin-left: 0.5%;
     margin-right: 0rem;
     margin-top: 1%; 
     margin-bottom: 0.5%;  
+    position: sticky;
+    top: 0;
 }
 
 li {
@@ -290,4 +326,10 @@ a:visited {
     color: #005246; /* Change the color of visited link*/
 }
 
+.time-container{
+    font-size: 6px;
+    padding: 10px;
+    padding-left: 70%;
+    
+}
 

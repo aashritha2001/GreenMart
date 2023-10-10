@@ -8,12 +8,19 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <link rel="stylesheet" type="text/css" href="../css/extras.css" />
     <link rel="stylesheet" type="text/css" href="../css/shopping-cart.css" />
+    <script src="../js/cart.js"></script>
 </head>
 
 <body>
     <div class="header">
         <a class="logo-wrapper" href="../index.html"><img class="logo-img" /></a>
         <h1>GreenMart</h1>
+        <div class="time-container">
+            <h1 id="date"></h1>
+            <h1 id="time"></h1>
+        </div>
+        <script src="../js/timer.js"></script>
+        
         <a class="user-wrapper" href="./Account.html"><img class="user-img" /></a>
     </div>
 
@@ -31,6 +38,7 @@
         <a href="Account.html" >My Account</a>
         <a href="About.html" class="active">About Us</a>
         <a href="Contact.html">Contact Us</a>
+        <a href="Cart.html">Cart</a>
     </div>
     <div class="content-wrap">
         <div class="main">
@@ -102,7 +110,7 @@
         <div class="side">
             <h1 id="cart">Shopping Cart</h1>
             <div class="table-container">
-                <table>
+                <table id="shopping-cart-side">
                     <thead>
                         <tr>
                             <th><strong>Product</strong></th>
@@ -111,40 +119,27 @@
                             <th><strong>Total</strong></th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="cart-body">
                         <tr>
-                            <td><strong>Strawberries</strong></td>
-                            <td>$5.27</td>
-                            <td><input type="number" value="1" min="1"></td>
-                            <td>$5.27</td>
+                            <td><strong>Cart is Empty</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             
-                        </tr>
-                        <tr>
-                            <td><strong>Oranges</strong></td>
-                            <td>$4.28</td>
-                            <td><input type="number" value="1" min="1"></td>
-                            <td>$9.56</td>
-                            
-                        </tr>
-                        <tr>
-                            <td><strong>Drumstick Ice Cream Cones...</strong></td>
-                            <td>$6.73</td>
-                            <td><input type="number" value="1" min="1"></td>
-                            <td>$6.73</td>
-                            
-                        </tr>
+                        </tr> 
                     </tbody>
                     <tfoot>
                         <tr>
                             <td colspan="3"><strong>Total</strong></td>
-                            <td colspan="2">$21.56</td>
+                            <td colspan="2">$0.00</td>
                         </tr>
                     </tfoot>
                 </table>
 
             </div>
 
-            <button class="cart-buy">Begin Checkout</button>
+            <button class="cart-buy" onclick="window.location.href='Cart.html'">Begin Checkout</button>
+            <button class="cart-buy" onclick="emptyCart()">Empty Cart</button> 
         </div>
     </div>
 

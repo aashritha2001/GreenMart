@@ -49,3 +49,23 @@
     background-color: #003400;
 
 }
+
+.radio-button
+{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.radio-button label{
+    color: white;
+    display: flex;
+    align-items: end;
+
+}
+
+.radio-button input{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+

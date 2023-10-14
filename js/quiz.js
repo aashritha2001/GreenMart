@@ -1,9 +1,6 @@
 let userAnswers = 0;
 let currentQuestion = 1;
 
-
-// document.getElementById('startButton').addEventListener('click', displayQuestionContainer);
-
 function nextQuestion() {
     let selectedAnswer = document.querySelector('input[name="answer"]:checked');
     let errorMessageElement = document.getElementById('errorMessage');

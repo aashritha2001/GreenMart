@@ -2,12 +2,10 @@
 // FILTERING CODE 
 filterSelection('all')
 
-function filterSelection(c) {
-    console.log(c);
+function filterSelection(selected) { 
     var x, i;
     x = document.getElementsByClassName("item-card");
-    if (c == "all") c = "";
-    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    if (selected == "all") selected = "";
     for (i = 0; i < x.length; i++) {
         removeClass(x[i], "show");
         if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
@@ -17,27 +15,27 @@ function filterSelection(c) {
 
 // Show filtered elements
 function addClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
+    var i, first, second;
+    first = element.className.split(" ");
+    second = name.split(" ");
+    for (i = 0; i < second.length; i++) {
+        if (first.indexOf(second[i]) == -1) {
+            element.className += " " + second[i];
         }
     }
 }
 
 // Hide elements that are not selected
 function removeClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
+    var i, first, second;
+    first = element.className.split(" ");
+    second = name.split(" ");
+    for (i = 0; i < second.length; i++) {
+        while (first.indexOf(second[i]) > -1) {
+            first.splice(first.indexOf(second[i]), 1);
         }
     }
-    element.className = arr1.join(" ");
+    element.className = first.join(" ");
 }
 
 function searchInput() {
@@ -46,7 +44,7 @@ function searchInput() {
     filter = input.value.toUpperCase();
     foodList = document.querySelector('.item-wrapper');
     itemCards = foodList.getElementsByClassName('item-card');
-    var messageElement = document.getElementById('message'); // Get the message element
+    var messageElement = document.getElementById('message'); 
     var matchingItems = false;
 
     // Check if input contains numbers

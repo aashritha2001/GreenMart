@@ -8,24 +8,23 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <link rel="stylesheet" type="text/css" href="../css/shopping-cart.css" />
     <link rel="stylesheet" type="text/css" href="../css/filter.css" />
-    <script src="../js/filter.js"></script>
     <script src="../js/cart.js"></script>
 </head>
 
 <body>
     <div class="header">
-        <a class="logo-wrapper" href="../index.html"><img class="logo-img"/></a>
+        <a class="logo-wrapper" href="../index.html"><img class="logo-img" /></a>
         <h1>GreenMart</h1>
         <div class="time-container">
             <h1 id="date"></h1>
             <h1 id="time"></h1>
         </div>
         <script src="../js/timer.js"></script>
-        <a class="user-wrapper" href="./Account.html"><img class="user-img"/></a> 
+        <a class="user-wrapper" href="./Account.html"><img class="user-img" /></a>
     </div>
 
     <div class="topnav" id="myTopnav">
-        <a href="../index.html">Home</a> 
+        <a href="../index.html">Home</a>
         <a href="FreshProduce.html">Fresh Produce</a>
         <a href="Frozen.html" class="active">Frozen</a>
         <a href="Pantry.html">Pantry</a>
@@ -33,7 +32,7 @@
         <a href="Baking.html">Baking</a>
         <a href="Snacks.html">Snacks</a>
         <a href="Candy.html">Candy</a>
-        <a href="Specialty.html" >Specialty Shops</a>
+        <a href="Specialty.html">Specialty Shops</a>
         <a href="Deals.html">Deals</a>
         <a href="Account.html">My Account</a>
         <a href="About.html">About Us</a>
@@ -71,7 +70,8 @@
                         <input type="text" value="1" class="item-count">
                         <span class="up" onClick='increaseCount(event, this)'>+</span>
                     </div>
-                    <button class="add-to-cart" onclick="addToCart('Drumstick Ice Cream Cones', 6.73, 'frozen1')">Add to Cart</button>
+                    <button class="add-to-cart" onclick="addToCart('Drumstick Ice Cream Cones', 6.73, 'frozen1')">Add to
+                        Cart</button>
                 </div>
                 <div class="item-card frozenSnacks" id="frozen2">
                     <img src="../img/products/fries-frozen.webp" alt="Fries">
@@ -83,7 +83,8 @@
                         <input type="text" value="1" class="item-count">
                         <span class="up" onClick='increaseCount(event, this)'>+</span>
                     </div>
-                    <button class="add-to-cart" onclick="addToCart('Arbys Seasoned Curly Fries', 4.72, 'frozen2')">Add to Cart</button>
+                    <button class="add-to-cart" onclick="addToCart('Arbys Seasoned Curly Fries', 4.72, 'frozen2')">Add
+                        to Cart</button>
                 </div>
                 <div class="item-card frozenPizza" id="frozen3">
                     <img src="../img/products/pizza.webp" alt="Pizza">
@@ -95,11 +96,153 @@
                         <input type="text" value="1" class="item-count">
                         <span class="up" onClick='increaseCount(event, this)'>+</span>
                     </div>
-                    <button class="add-to-cart" onclick="addToCart('Red Baron Frozen Pizza', 4.28, 'frozen3')">Add to Cart</button>
+                    <button class="add-to-cart" onclick="addToCart('Red Baron Frozen Pizza', 4.28, 'frozen3')">Add to
+                        Cart</button>
                 </div>
+                
+                <div class="item-card frozenPizza" id="frozen4">
+                    <img src="../img/products/frozenpizzapepperoni.avif" alt="Pizza">
+                    <h4>DiGiorno Rising Crust Pizza</h4>
+                    <p>Pepperoni, 27.50 oz</p>
+                    <span class="price">$5.99</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('DiGiorno Rising Crust Pizza', 5.99, 'frozen4')">Add
+                        to Cart</button>
+                </div>
+
+                <div class="item-card frozenPizza" id="frozen5">
+                    <img src="../img/products/frozentombstone.webp" alt="Pizza">
+                    <h4>Tombstone Original Pizza</h4>
+                    <p>Supreme, 19.30 oz</p>
+                    <span class="price">$3.49</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Tombstone Original Pizza', 3.49, 'frozen5')">Add to
+                        Cart</button>
+                </div>
+
+                <div class="item-card frozenMeals" id="frozen6">
+                    <img src="../img/products/frozenalfredo.webp" alt="Frozen Meal">
+                    <h4>Lean Cuisine Frozen Meal</h4>
+                    <p>Chicken Alfredo, 9.87 oz</p>
+                    <span class="price">$2.89</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Lean Cuisine Frozen Meal', 2.89, 'frozen6')">Add to
+                        Cart</button>
+                </div>
+
+                <div class="item-card frozenMeals" id="frozen7">
+                    <img src="../img/products/frozenlasagna.webp" alt="Frozen Meal">
+                    <h4>Stouffer's Lasagna</h4>
+                    <p>Family Size, 38 oz</p>
+                    <span class="price">$8.79</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Stouffers Lasagna', 8.79, 'frozen7')">Add to
+                        Cart</button>
+                </div>
+
+                <div class="item-card frozenBreakfast" id="frozen8">
+                    <img src="../img/products/frozencroissant.png" alt="Breakfast Sandwich">
+                    <h4>Jimmy Dean Sausage, Egg & Cheese Croissant Sandwiches</h4>
+                    <p>6 Count, 29.40 oz</p>
+                    <span class="price">$9.49</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Jimmy Dean Sausage, Egg & Cheese Croissant Sandwiches', 9.49, 'frozen8')">Add
+                        to Cart</button>
+                </div>
+
+                <div class="item-card frozenBreakfast rollbacks" id="frozen9">
+                    <img src="../img/products/frozenstrudel.jpeg" alt="Toaster Strudel">
+                    <h4>Pillsbury Toaster Strudel</h4>
+                    <p>Cherry, 11.70 oz</p>
+                    <span class="price">$2.49</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Pillsbury Toaster Strudel', 2.49, 'frozen9')">Add
+                        to Cart</button>
+                </div>
+
+                <div class="item-card frozenDessert" id="frozen10">
+                    <img src="../img/products/frozencookie.webp" alt="Cookie Dough">
+                    <h4>Nestle Toll House Chocolate Chip Cookie Dough</h4>
+                    <p>24 oz</p>
+                    <span class="price">$5.29</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Nestle Toll House Chocolate Chip Cookie Dough', 5.29, 'frozen10')">Add to
+                        Cart</button>
+                </div>
+ 
+                <div class="item-card frozenDessert rollbacks" id="frozen11">
+                    <img src="../img/products/frozenicecream.jpeg" alt="Ice Cream Bar">
+                    <h4>Haagen-Dazs Vanilla Almond Bar</h4>
+                    <p>3 Bars, 9 oz</p>
+                    <span class="price">$4.49</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Haagen-Dazs Vanilla Almond Bar', 4.49, 'frozen11')">Add to Cart</button>
+                </div>
+
+                <div class="item-card frozenMeat" id="frozen12">
+                    <img src="../img/products/frozenchicken.jpeg" alt="Grilled Chicken">
+                    <h4>Tyson Fully Cooked Grilled Chicken Breast Strips</h4>
+                    <p>22 oz</p>
+                    <span class="price">$6.89</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Tyson Fully Cooked Grilled Chicken Breast Strips', 6.89, 'frozen12')">Add to Cart</button>
+                </div>
+
+                <div class="item-card frozenSnacks rollbacks" id="frozen13">
+                    <img src="../img/products/frozenmozz.webp" alt="Mozzarella Sticks">
+                    <h4>TGI Fridays Mozzarella Sticks</h4>
+                    <p>15 Count, 11 oz</p>
+                    <span class="price">$3.79</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('TGI Fridays Mozzarella Sticks', 3.79, 'frozen13')">Add to Cart</button>
+                </div>
+
             </div>
         </div>
-        <div class="side">
+        <div class=" side">
             <h1 id="cart">Shopping Cart</h1>
             <div class="table-container">
                 <table id="shopping-cart-side">
@@ -117,8 +260,8 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            
-                        </tr> 
+
+                        </tr>
                     </tbody>
                     <tfoot>
                         <tr>
@@ -131,7 +274,7 @@
             </div>
 
             <button class="cart-buy" onclick="window.location.href='Cart.html'">Begin Checkout</button>
-            <button class="cart-buy" onclick="emptyCart()">Empty Cart</button> 
+            <button class="cart-buy" onclick="emptyCart()">Empty Cart</button>
         </div>
     </div>
 
@@ -140,6 +283,7 @@
             <p>Aashritha Ananthula, AXA180116</p>
         </div>
     </div>
+    <script src="../js/filter.js"></script>
 </body>
 
 </html>

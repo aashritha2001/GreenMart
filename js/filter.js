@@ -46,13 +46,36 @@ function searchInput() {
     filter = input.value.toUpperCase();
     foodList = document.querySelector('.item-wrapper');
     itemCards = foodList.getElementsByClassName('item-card');
+    var messageElement = document.getElementById('message'); // Get the message element
+    var matchingItems = false;
 
-    for (i = 0; i < itemCards.length; i++) {
-        txtValue = itemCards[i].textContent || itemCards[i].innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            itemCards[i].style.display = '';
-        } else {
-            itemCards[i].style.display = 'none';
+    // Check if input contains numbers
+    if (/\d/.test(input.value)) {
+        messageElement.innerHTML = "Numbers are not allowed. Please enter a valid search term."; // Set the message
+        input.value = '';
+        // display all cards again
+        for (i = 0; i < itemCards.length; i++) {
+            itemCards[i].style.display = ''; 
+        } 
+        return;
+    }
+    else{
+        messageElement.innerHTML = '';
+        for (i = 0; i < itemCards.length; i++) {
+            txtValue = itemCards[i].textContent || itemCards[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                itemCards[i].style.display = '';
+                matchingItems = true;
+            } else {
+                itemCards[i].style.display = 'none';
+            }
         }
     }
+
+    // If no matching items are found, display message
+    if (!matchingItems) {
+        messageElement.innerHTML = "No matching items";
+    }
+
+    
 }

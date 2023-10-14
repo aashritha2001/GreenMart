@@ -193,6 +193,10 @@
     margin-bottom: 20px;
 }
 
+#message{
+    color: red;
+}
+
 /* Main section item cards */
 
 .item-wrapper{
@@ -200,6 +204,7 @@
     overflow-x: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .item-card {
@@ -333,3 +338,9 @@ a:visited {
     
 }
 
+
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

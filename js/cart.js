@@ -7,37 +7,85 @@ function addToCart(itemName, itemPrice, itemId) {
         'Fresh Tomato on the Vine': 20,
         'Fresh Strawberries': 3,
         'Orange': 5,
+        'Fresh Apple': 6,
+        'Fresh Broccoli': 10,
+        'Precut Pineapples': 15,
+        'Fresh Rose Bouquet': 8,
+        'Spinach Artichoke Dip': 12,
+        'Fresh Pumpkin': 6,
+        'Fruit Salad': 25,
+        'Onions': 30,
+        'Carrots': 18,
 
         // Frozen 
         'Drumstick Ice Cream Cones': 20,
         'Arbys Seasoned Curly Fries': 3,
         'Red Baron Frozen Pizza': 5,
-
+        'DiGiorno Rising Crust Pizza': 20,
+        'Tombstone Original Pizza': 3,
+        'Lean Cuisine Frozen Meal': 5,
+        'Stouffers Lasagna': 20,
+        'Jimmy Dean Sausage, Egg & Cheese Croissant Sandwiches': 3,
+        'Pillsbury Toaster Strudel': 5,
+        'Nestle Toll House Chocolate Chip Cookie Dough': 20,
+        'Haagen-Dazs Vanilla Almond Bar': 3,
+        'Tyson Fully Cooked Grilled Chicken Breast Strips': 5, 
+        'TGI Fridays Mozzarella Sticks': 20,
 
         // Pantry
         'Banza Chickpea Rotini': 20,
         'Hunts Tomato Paste': 5,
         'Crushed Red Peppers': 3,
+        'Campbells Chicken Noodle Soup': 6,
+        'Del Monte Green Beans': 10,
+        'Progresso Traditional Italian-Style Wedding Soup': 15,
+        'Green Giant Sweet Peas': 8,
+        'Libbys Whole Kernel Sweet Corn': 12,
+        'Bushs Best Original Baked Beans': 6,
+        'Heinz Ketchup': 25,
+        'Nutella Hazelnut Spread': 30,
+        'Jif Creamy Peanut Butter': 18,
+        'Welchs Concord Grape Jelly': 21,
 
         // Breakfast
         'Kelloggs Krave Cereal': 5,
         'Eggo Homestyle Frozen Waffles': 20,
         'Honey Nut Cheerios Cereal': 5,
+        'Corn Flakes Cereal': 3,
+        'Raisin Bran Cereal': 10,
+        'Buttermilk Pancake Mix': 5,
+        'Original Waffle Mix': 3,
+        'Plain Bagels': 10,
+        'Cinnamon Swirl Bread': 5,
+        'Instant Oatmeal Variety Pack': 3,
+        'Instant Grits': 10,
 
         // Candy 
         'Milk Duds Chocolate Candy': 10,
         'Twix Caramel Minis Candy': 5,
         'Lindor Chocolate Truffles': 3,
+        'Snickers Candy Bar': 10,
+        'M&Ms Milk Chocolate Candy': 5,
+        'Twix Caramel Cookie Bars': 3,
 
         // Snacks
         'Snack Pack Chocolate Pudding': 10,
         'Miss Vickies Potato Chips': 5,
         'OREO Chocolate Cookies': 3,
+        'Mini Pretzels': 10,
+        'Mixed Nuts': 5,
+        'Lays Classic Potato Chips': 3,
+
 
         // Baking
-        'Pillsbury Chocolate Cake Mix': 25,
         'Great Value Baking Soda': 3,
-        'Betty Crocker Cookie Mix': 5
+        'Apple Pie Filling': 10,
+        'Cherry Pie Filling': 5,
+        'Pre-made Pie Crust': 3,
+        'Graham Cracker Pie Crust': 10,
+        'Vanilla Pudding Mix': 5,
+        'Chocolate Pudding Mix': 3,
+        '9-inch Pie Pan': 10
 
     };
 
@@ -159,7 +207,7 @@ function addToCartUI(itemName, itemPrice, itemQuantity) {
 
     // Define the HTML content for the new row
     var name = itemName;
-    if (itemName.length > 15 && !window.location.pathname.endsWith('Cart.html') ) {
+    if (itemName.length > 15 && !window.location.pathname.endsWith('Cart.html')) {
         var name = itemName.substring(0, 15);
         name += '...';
     }

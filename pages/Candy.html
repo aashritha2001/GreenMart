@@ -13,26 +13,26 @@
 
 <body>
     <div class="header">
-        <a class="logo-wrapper" href="../index.html"><img class="logo-img"/></a>
+        <a class="logo-wrapper" href="../index.html"><img class="logo-img" /></a>
         <h1>GreenMart</h1>
         <div class="time-container">
             <h1 id="date"></h1>
             <h1 id="time"></h1>
         </div>
         <script src="../js/timer.js"></script>
-        <a class="user-wrapper" href="./Account.html"><img class="user-img"/></a> 
+        <a class="user-wrapper" href="./Account.html"><img class="user-img" /></a>
     </div>
 
     <div class="topnav" id="myTopnav">
-        <a href="../index.html">Home</a> 
+        <a href="../index.html">Home</a>
         <a href="FreshProduce.html">Fresh Produce</a>
         <a href="Frozen.html">Frozen</a>
-        <a href="Pantry.html" >Pantry</a>
+        <a href="Pantry.html">Pantry</a>
         <a href="Breakfast.html">Breakfast & Cereal</a>
         <a href="Baking.html">Baking</a>
         <a href="Snacks.html">Snacks</a>
         <a href="Candy.html" class="active">Candy</a>
-        <a href="Specialty.html" >Specialty Shops</a>
+        <a href="Specialty.html">Specialty Shops</a>
         <a href="Deals.html">Deals</a>
         <a href="Account.html">My Account</a>
         <a href="About.html">About Us</a>
@@ -47,6 +47,7 @@
                 <input type="text" class="search-input" id="search" placeholder="Search..." onkeyup="searchInput()">
                 <button class="search-button">Search</button>
             </div>
+            <div id="message"></div>
 
             <div class="item-wrapper">
                 <div class="item-card" id="candy1">
@@ -59,7 +60,8 @@
                         <input type="text" value="1" class="item-count">
                         <span class="up" onClick='increaseCount(event, this)'>+</span>
                     </div>
-                    <button class="add-to-cart" onclick="addToCart('Milk Duds Chocolate Candy', 2.57, 'candy1')">Add to Cart</button>
+                    <button class="add-to-cart" onclick="addToCart('Milk Duds Chocolate Candy', 2.57, 'candy1')">Add to
+                        Cart</button>
                 </div>
                 <div class="item-card" id="candy2">
                     <img src="../img/products/twix.webp" alt="Twix">
@@ -71,7 +73,8 @@
                         <input type="text" value="1" class="item-count">
                         <span class="up" onClick='increaseCount(event, this)'>+</span>
                     </div>
-                    <button class="add-to-cart" onclick="addToCart('Twix Caramel Minis Candy', 12.22, 'candy2')">Add to Cart</button>
+                    <button class="add-to-cart" onclick="addToCart('Twix Caramel Minis Candy', 12.22, 'candy2')">Add to
+                        Cart</button>
                 </div>
                 <div class="item-card" id="candy3">
                     <img src="../img/products/lindor.webp" alt="Lindor">
@@ -83,8 +86,52 @@
                         <input type="text" value="1" class="item-count">
                         <span class="up" onClick='increaseCount(event, this)'>+</span>
                     </div>
-                    <button class="add-to-cart" onclick="addToCart('Lindor Chocolate Truffles', 12.95, 'candy3')">Add to Cart</button>
+                    <button class="add-to-cart" onclick="addToCart('Lindor Chocolate Truffles', 12.95, 'candy3')">Add to
+                        Cart</button>
                 </div>
+
+                <div class="item-card" id="candy4">
+                    <img src="../img/products/snickers.webp" alt="Snickers">
+                    <h4>Snickers Candy Bar</h4>
+                    <p>Fun Size, 11.18 oz Bag</p>
+                    <span class="price">$3.99</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Snickers Candy Bar', 3.99, 'candy4')">Add to
+                        Cart</button>
+                </div>
+
+                <div class="item-card" id="candy5">
+                    <img src="../img/products/m&ms.jpeg" alt="M&M's">
+                    <h4>M&M's Milk Chocolate Candy</h4>
+                    <p>Share Size, 3.14 oz</p>
+                    <span class="price">$1.29</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('M&Ms Milk Chocolate Candy', 1.29, 'candy5')">Add
+                        to Cart</button>
+                </div>
+
+                <div class="item-card" id="candy6">
+                    <img src="../img/products/twixcandy.webp" alt="Twix">
+                    <h4>Twix Caramel Cookie Bars</h4>
+                    <p>Full Size, 1.79 oz</p>
+                    <span class="price">$0.99</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Twix Caramel Cookie Bars', 0.99, 'candy6')">Add
+                        to Cart</button>
+                </div>
+
             </div>
         </div>
         <div class="side">
@@ -105,8 +152,8 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            
-                        </tr> 
+
+                        </tr>
                     </tbody>
                     <tfoot>
                         <tr>
@@ -118,12 +165,14 @@
 
             </div>
 
-            
+
 
             <button class="cart-buy" onclick="window.location.href='Cart.html'">Begin Checkout</button>
-            <button class="cart-buy" onclick="emptyCart()">Empty Cart</button> 
+            <button class="cart-buy" onclick="emptyCart()">Empty Cart</button>
         </div>
     </div>
+
+
 
     <div class="footer">
         <div class="name-info">

@@ -8,24 +8,23 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <link rel="stylesheet" type="text/css" href="../css/shopping-cart.css" />
     <link rel="stylesheet" type="text/css" href="../css/filter.css" />
-    <script src="../js/filter.js"></script>
     <script src="../js/cart.js"></script>
 </head>
 
 <body>
     <div class="header">
-        <a class="logo-wrapper" href="../index.html"><img class="logo-img"/></a>
+        <a class="logo-wrapper" href="../index.html"><img class="logo-img" /></a>
         <h1>GreenMart</h1>
         <div class="time-container">
             <h1 id="date"></h1>
             <h1 id="time"></h1>
         </div>
         <script src="../js/timer.js"></script>
-        <a class="user-wrapper" href="./Account.html"><img class="user-img"/></a> 
+        <a class="user-wrapper" href="./Account.html"><img class="user-img" /></a>
     </div>
 
     <div class="topnav" id="myTopnav">
-        <a href="../index.html">Home</a> 
+        <a href="../index.html">Home</a>
         <a href="FreshProduce.html">Fresh Produce</a>
         <a href="Frozen.html">Frozen</a>
         <a href="Pantry.html" class="active">Pantry</a>
@@ -33,7 +32,7 @@
         <a href="Baking.html">Baking</a>
         <a href="Snacks.html">Snacks</a>
         <a href="Candy.html">Candy</a>
-        <a href="Specialty.html" >Specialty Shops</a>
+        <a href="Specialty.html">Specialty Shops</a>
         <a href="Deals.html">Deals</a>
         <a href="Account.html">My Account</a>
         <a href="About.html">About Us</a>
@@ -48,7 +47,7 @@
                 <input type="text" class="search-input" placeholder="Search...">
                 <button class="search-button">Search</button>
             </div>
-            
+
             <div id="filterContainer">
                 <button class="btn active" onclick="filterSelection('all')"> Shop all</button>
                 <button class="btn" onclick="filterSelection('cannedGoods')"> Canned Goods</button>
@@ -70,7 +69,8 @@
                         <input type="text" value="1" class="item-count">
                         <span class="up" onClick='increaseCount(event, this)'>+</span>
                     </div>
-                    <button class="add-to-cart" onclick="addToCart('Banza Chickpea Rotini', 3.31, 'pantry1')">Add to Cart</button>
+                    <button class="add-to-cart" onclick="addToCart('Banza Chickpea Rotini', 3.31, 'pantry1')">Add to
+                        Cart</button>
                 </div>
                 <div class="item-card cannedVegetables" id="pantry2">
                     <img src="../img/products/tomato-paste.webp" alt="Tomato paste">
@@ -82,9 +82,10 @@
                         <input type="text" value="1" class="item-count">
                         <span class="up" onClick='increaseCount(event, this)'>+</span>
                     </div>
-                    <button class="add-to-cart" onclick="addToCart('Hunts Tomato Paste', 0.92, 'pantry2')">Add to Cart</button>
+                    <button class="add-to-cart" onclick="addToCart('Hunts Tomato Paste', 0.92, 'pantry2')">Add to
+                        Cart</button>
                 </div>
-                <div class="item-card condiments" id="pantry3">
+                <div class="item-card rollbacks" id="pantry3">
                     <img src="../img/products/peppers.webp" alt="Peppers">
                     <h4>Crushed Red Peppers</h4>
                     <p> 1.5 oz</p>
@@ -94,11 +95,153 @@
                         <input type="text" value="1" class="item-count">
                         <span class="up" onClick='increaseCount(event, this)'>+</span>
                     </div>
-                    <button class="add-to-cart"  onclick="addToCart('Crushed Red Peppers', 2.27, 'pantry3')">Add to Cart</button>
+                    <button class="add-to-cart" onclick="addToCart('Crushed Red Peppers', 2.27, 'pantry3')">Add to
+                        Cart</button>
+                </div>
+                
+                <div class="item-card cannedGoods" id="pantry4">
+                    <img src="../img/products/pantrysoup.webp" alt="Chicken Noodle Soup">
+                    <h4>Campbell's Chicken Noodle Soup</h4>
+                    <p>10.75 oz</p>
+                    <span class="price">$1.49</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Campbells Chicken Noodle Soup', 1.49, 'pantry4')">Add to Cart</button>
+                </div>
+ 
+                <div class="item-card cannedVegetables" id="pantry5">
+                    <img src="../img/products/pantrybeans.jpeg" alt="Green Beans">
+                    <h4>Del Monte Green Beans</h4>
+                    <p>14.5 oz</p>
+                    <span class="price">$0.89</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Del Monte Green Beans', 0.89, 'pantry5')">Add to
+                        Cart</button>
+                </div>
+ 
+                <div class="item-card cannedGoods" id="pantry6">
+                    <img src="../img/products/pantryweddingsoup.jpeg" alt="Italian-Style Wedding Soup">
+                    <h4>Progresso Traditional Italian-Style Wedding Soup</h4>
+                    <p>18.5 oz</p>
+                    <span class="price">$2.29</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Progresso Traditional Italian-Style Wedding Soup', 2.29, 'pantry6')">Add to
+                        Cart</button>
+                </div>
+
+                <div class="item-card cannedVegetables" id="pantry7">
+                    <img src="../img/products/pantrypeas.png" alt="Sweet Peas">
+                    <h4>Green Giant Sweet Peas</h4>
+                    <p>15 oz</p>
+                    <span class="price">$0.99</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Green Giant Sweet Peas', 0.99, 'pantry7')">Add to
+                        Cart</button>
+                </div>
+
+                <div class="item-card cannedVegetables" id="pantry8">
+                    <img src="../img/products/pantrycorn.webp" alt="Sweet Corn">
+                    <h4>Libby's Whole Kernel Sweet Corn</h4>
+                    <p>15 oz</p>
+                    <span class="price">$1.19</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Libbys Whole Kernel Sweet Corn', 1.19, 'pantry8')">Add to Cart</button>
+                </div>
+
+                <div class="item-card cannedGoods" id="pantry9">
+                    <img src="../img/products/pantrypintobeans.jpeg" alt="Baked Beans">
+                    <h4>Bush's Best Original Baked Beans</h4>
+                    <p>28 oz</p>
+                    <span class="price">$1.99</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Bushs Best Original Baked Beans', 1.99, 'pantry9')">Add to Cart</button>
+                </div>
+
+                <div class="item-card condiments" id="pantry10">
+                    <img src="../img/products/ketchup.webp" alt="Ketchup">
+                    <h4>Heinz Ketchup</h4>
+                    <p>20 oz</p>
+                    <span class="price">$2.49</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Heinz Ketchup', 2.49, 'pantry10')">Add to
+                        Cart</button>
+                </div>
+
+                <div class="item-card spreads rollbacks" id="pantry11">
+                    <img src="../img/products/nutella.jpeg" alt="Hazelnut Spread">
+                    <h4>Nutella Hazelnut Spread</h4>
+                    <p>13 oz</p>
+                    <span class="price">$3.49</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Nutella Hazelnut Spread', 3.49, 'pantry11')">Add to
+                        Cart</button>
+                </div>
+
+                <div class="item-card spreads" id="pantry12">
+                    <img src="../img/products/peanutbutter.jpeg" alt="Peanut Butter">
+                    <h4>Jif Creamy Peanut Butter</h4>
+                    <p>16 oz</p>
+                    <span class="price">$2.99</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Jif Creamy Peanut Butter', 2.99, 'pantry12')">Add to
+                        Cart</button>
+                </div>
+
+                <div class="item-card spreads" id="pantry13">
+                    <img src="../img/products/jelly.jpeg" alt="Grape Jelly">
+                    <h4>Welch's Concord Grape Jelly</h4>
+                    <p>30 oz</p>
+                    <span class="price">$2.79</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Welchs Concord Grape Jelly', 2.79, 'pantry13')">Add to Cart</button>
                 </div>
             </div>
         </div>
-        <div class="side">
+        <div class=" side">
             <h1 id="cart">Shopping Cart</h1>
             <div class="table-container">
                 <table id="shopping-cart-side">
@@ -116,8 +259,8 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            
-                        </tr> 
+
+                        </tr>
                     </tbody>
                     <tfoot>
                         <tr>
@@ -130,7 +273,7 @@
             </div>
 
             <button class="cart-buy" onclick="window.location.href='Cart.html'">Begin Checkout</button>
-            <button class="cart-buy" onclick="emptyCart()">Empty Cart</button> 
+            <button class="cart-buy" onclick="emptyCart()">Empty Cart</button>
         </div>
     </div>
 
@@ -139,6 +282,7 @@
             <p>Aashritha Ananthula, AXA180116</p>
         </div>
     </div>
+    <script src="../js/filter.js"></script>
 </body>
 
 </html>

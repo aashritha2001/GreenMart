@@ -8,24 +8,23 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <link rel="stylesheet" type="text/css" href="../css/shopping-cart.css" />
     <link rel="stylesheet" type="text/css" href="../css/filter.css" />
-    <script src="../js/filter.js"></script>
     <script src="../js/cart.js"></script>
 </head>
 
 <body>
     <div class="header">
-        <a class="logo-wrapper" href="../index.html"><img class="logo-img"/></a>
+        <a class="logo-wrapper" href="../index.html"><img class="logo-img" /></a>
         <h1>GreenMart</h1>
         <div class="time-container">
             <h1 id="date"></h1>
             <h1 id="time"></h1>
         </div>
         <script src="../js/timer.js"></script>
-        <a class="user-wrapper" href="./Account.html"><img class="user-img"/></a> 
+        <a class="user-wrapper" href="./Account.html"><img class="user-img" /></a>
     </div>
 
     <div class="topnav" id="myTopnav">
-        <a href="../index.html">Home</a> 
+        <a href="../index.html">Home</a>
         <a href="FreshProduce.html">Fresh Produce</a>
         <a href="Frozen.html">Frozen</a>
         <a href="Pantry.html">Pantry</a>
@@ -33,7 +32,7 @@
         <a href="Baking.html">Baking</a>
         <a href="Snacks.html">Snacks</a>
         <a href="Candy.html">Candy</a>
-        <a href="Specialty.html" >Specialty Shops</a>
+        <a href="Specialty.html">Specialty Shops</a>
         <a href="Deals.html">Deals</a>
         <a href="Account.html">My Account</a>
         <a href="About.html">About Us</a>
@@ -59,7 +58,7 @@
             </div>
 
             <div class="item-wrapper">
-                <div class="item-card cereal" id="breakfast1">
+                <div class="item-card cereal rollbacks" id="breakfast1">
                     <img src="../img/products/cereal-krave.jpeg" alt="Cereal">
                     <h4>Kellogg's Krave Cereal</h4>
                     <p> 17.3 oz</p>
@@ -69,7 +68,8 @@
                         <input type="text" value="1" class="item-count">
                         <span class="up" onClick='increaseCount(event, this)'>+</span>
                     </div>
-                    <button class="add-to-cart" onclick="addToCart('Kelloggs Krave Cereal', 4.98, 'breakfast1')">Add to Cart</button>
+                    <button class="add-to-cart" onclick="addToCart('Kelloggs Krave Cereal', 4.98, 'breakfast1')">Add to
+                        Cart</button>
                 </div>
                 <div class="item-card pancakesWaffles" id="breakfast2">
                     <img src="../img/products/waffles.webp" alt="Waffles">
@@ -81,9 +81,10 @@
                         <input type="text" value="1" class="item-count">
                         <span class="up" onClick='increaseCount(event, this)'>+</span>
                     </div>
-                    <button class="add-to-cart" onclick="addToCart('Eggo Homestyle Frozen Waffles', 6.36, 'breakfast2')">Add to Cart</button>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Eggo Homestyle Frozen Waffles', 6.36, 'breakfast2')">Add to Cart</button>
                 </div>
-                <div class="item-card cereal" id="breakfast3">
+                <div class="item-card cereal rollbacks" id="breakfast3">
                     <img src="../img/products/cereal.jpeg" alt="Cereal">
                     <h4>Honey Nut Cheerios Cereal</h4>
                     <p> 18.8 oz Family Size box</p>
@@ -93,8 +94,122 @@
                         <input type="text" value="1" class="item-count">
                         <span class="up" onClick='increaseCount(event, this)'>+</span>
                     </div>
-                    <button class="add-to-cart" onclick="addToCart('Honey Nut Cheerios Cereal', 4.93, 'breakfast3')" >Add to Cart</button>
+                    <button class="add-to-cart" onclick="addToCart('Honey Nut Cheerios Cereal', 4.93, 'breakfast3')">Add
+                        to Cart</button>
                 </div>
+
+                <div class="item-card cereal" id="breakfast4">
+                    <img src="../img/products/cornflakes.jpeg" alt="Corn Flakes">
+                    <h4>Corn Flakes Cereal</h4>
+                    <p>16 oz Box</p>
+                    <span class="price">$3.49</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Corn Flakes Cereal', 3.49, 'breakfast4')">Add to
+                        Cart</button>
+                </div>
+
+                <div class="item-card cereal" id="breakfast5">
+                    <img src="../img/products/raisincereal.avif" alt="Raisin Bran">
+                    <h4>Raisin Bran Cereal</h4>
+                    <p>18.7 oz Box</p>
+                    <span class="price">$3.99</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Raisin Bran Cereal', 3.99, 'breakfast5')">Add to
+                        Cart</button>
+                </div>
+
+                <div class="item-card pancakesWaffles rollbacks" id="breakfast6">
+                    <img src="../img/products/buttermilkpancakes.jpeg" alt="Pancake Mix">
+                    <h4>Buttermilk Pancake Mix</h4>
+                    <p>32 oz Box</p>
+                    <span class="price">$2.79</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Buttermilk Pancake Mix', 2.79, 'breakfast6')">Add to
+                        Cart</button>
+                </div>
+
+                <div class="item-card pancakesWaffles" id="breakfast7">
+                    <img src="../img/products/wafflemix.webp" alt="Waffle Mix">
+                    <h4>Original Waffle Mix</h4>
+                    <p>24 oz Box</p>
+                    <span class="price">$3.19</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Original Waffle Mix', 3.19, 'breakfast7')">Add to
+                        Cart</button>
+                </div>
+
+                <div class="item-card breads rollbacks" id="breakfast8">
+                    <img src="../img/products/bagels.jpeg" alt="Bagels">
+                    <h4>Plain Bagels</h4>
+                    <p>6-Pack</p>
+                    <span class="price">$2.99</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Plain Bagels', 2.99, 'breakfast8')">Add to
+                        Cart</button>
+                </div>
+
+                <div class="item-card breads" id="breakfast9">
+                    <img src="../img/products/cinnamonbread.jpeg" alt="Cinnamon Swirl Bread">
+                    <h4>Cinnamon Swirl Bread</h4>
+                    <p>16 oz Loaf</p>
+                    <span class="price">$3.49</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class=" up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Cinnamon Swirl Bread', 3.49, 'breakfast9')">Add to
+                        Cart</button>
+                </div>
+
+                <div class="item-card oatmealGrits" id="breakfast10">
+                    <img src="../img/products/quakeroats.jpeg" alt="Instant Oatmeal">
+                    <h4>Instant Oatmeal Variety Pack</h4>
+                    <p>10-Count Box</p>
+                    <span class="price">$4.29</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Instant Oatmeal Variety Pack', 4.29, 'breakfast10')">Add to Cart</button>
+                </div>
+
+                <div class="item-card oatmealGrits" id="breakfast11">
+                    <img src="../img/products/instantgrits.jpeg" alt="Instant Grits">
+                    <h4>Instant Grits</h4>
+                    <p>12 oz Box</p>
+                    <span class="price">$2.99</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Instant Grits', 2.99, 'breakfast11')">Add to
+                        Cart</button>
+                </div>
+
             </div>
         </div>
         <div class="side">
@@ -115,8 +230,8 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            
-                        </tr> 
+
+                        </tr>
                     </tbody>
                     <tfoot>
                         <tr>
@@ -129,7 +244,7 @@
             </div>
 
             <button class="cart-buy" onclick="window.location.href='Cart.html'">Begin Checkout</button>
-            <button class="cart-buy" onclick="emptyCart()">Empty Cart</button> 
+            <button class="cart-buy" onclick="emptyCart()">Empty Cart</button>
         </div>
     </div>
 
@@ -138,6 +253,7 @@
             <p>Aashritha Ananthula, AXA180116</p>
         </div>
     </div>
+    <script src="../js/filter.js"></script>
 </body>
 
 </html>

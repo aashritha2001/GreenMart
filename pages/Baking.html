@@ -8,31 +8,31 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <link rel="stylesheet" type="text/css" href="../css/shopping-cart.css" />
     <script src="../js/cart.js"></script>
-    
+
 </head>
 
 <body>
     <div class="header">
-        <a class="logo-wrapper" href="../index.html"><img class="logo-img"/></a>
+        <a class="logo-wrapper" href="../index.html"><img class="logo-img" /></a>
         <h1>GreenMart</h1>
         <div class="time-container">
             <h1 id="date"></h1>
             <h1 id="time"></h1>
         </div>
         <script src="../js/timer.js"></script>
-        <a class="user-wrapper" href="./Account.html"><img class="user-img"/></a> 
+        <a class="user-wrapper" href="./Account.html"><img class="user-img" /></a>
     </div>
 
     <div class="topnav" id="myTopnav">
-        <a href="../index.html">Home</a> 
+        <a href="../index.html">Home</a>
         <a href="FreshProduce.html">Fresh Produce</a>
         <a href="Frozen.html">Frozen</a>
-        <a href="Pantry.html" >Pantry</a>
+        <a href="Pantry.html">Pantry</a>
         <a href="Breakfast.html">Breakfast & Cereal</a>
         <a href="Baking.html" class="active">Baking</a>
         <a href="Snacks.html">Snacks</a>
         <a href="Candy.html">Candy</a>
-        <a href="Specialty.html" >Specialty Shops</a>
+        <a href="Specialty.html">Specialty Shops</a>
         <a href="Deals.html">Deals</a>
         <a href="Account.html">My Account</a>
         <a href="About.html">About Us</a>
@@ -50,18 +50,6 @@
 
             <div class="item-wrapper">
                 <div class="item-card" id="baking1">
-                    <img src="../img/products/cakemix.jpeg" alt="Cake mix">
-                    <h4>Pillsbury Chocolate Cake Mix</h4>
-                    <p> 15.25 oz</p>
-                    <span class="price">$3.96</span>
-                    <div class="counter">
-                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                        <input type="text" value="1" class="item-count">
-                        <span class="up" onClick='increaseCount(event, this)'>+</span>
-                    </div>
-                    <button class="add-to-cart" onclick="addToCart('Pillsbury Chocolate Cake Mix', 3.96, 'baking1')">Add to Cart</button>
-                </div>
-                <div class="item-card" id="baking2">
                     <img src="../img/products/bakingsoda.webp" alt="baking soda">
                     <h4>Great Value Baking Soda</h4>
                     <p>16 oz</p>
@@ -71,20 +59,108 @@
                         <input type="text" value="1" class="item-count">
                         <span class="up" onClick='increaseCount(event, this)'>+</span>
                     </div>
-                    <button class="add-to-cart" onclick="addToCart('Great Value Baking Soda', 0.97, 'baking2')">Add to Cart</button>
+                    <button class="add-to-cart" onclick="addToCart('Great Value Baking Soda', 0.97, 'baking1')">Add to
+                        Cart</button>
                 </div>
-                <div class="item-card" id="baking3">
-                    <img src="../img/products/cookiemix.jpeg" alt="Cookie mix">
-                    <h4>Betty Crocker Cookie Mix</h4>
-                    <p>  Makes (12) 2-inch Cookies</p>
-                    <span class="price">$4.28</span>
+ 
+                <div class="item-card pieFilling" id="baking2">
+                    <img src="../img/products/piefilling.webp" alt="Apple Pie Filling">
+                    <h4>Apple Pie Filling</h4>
+                    <p>24 oz Can</p>
+                    <span class="price">$3.99</span>
                     <div class="counter">
                         <span class="down" onClick='decreaseCount(event, this)'>-</span>
                         <input type="text" value="1" class="item-count">
                         <span class="up" onClick='increaseCount(event, this)'>+</span>
                     </div>
-                    <button class="add-to-cart" onclick="addToCart('Betty Crocker Cookie Mix', 4.28, 'baking3')">Add to Cart</button>
+                    <button class="add-to-cart" onclick="addToCart('Apple Pie Filling', 3.99, 'baking2')">Add to
+                        Cart</button>
                 </div>
+ 
+                <div class="item-card pieFilling" id="baking3">
+                    <img src="../img/products/cherryfilling.jpeg" alt="Cherry Pie Filling">
+                    <h4>Cherry Pie Filling</h4>
+                    <p>21 oz Can</p>
+                    <span class="price">$4.49</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Cherry Pie Filling', 4.49, 'baking3')">Add to
+                        Cart</button>
+                </div>
+
+                <div class="item-card pieCrust" id="baking4">
+                    <img src="../img/products/piecrust.jpeg" alt="Pie Crust">
+                    <h4>Pre-made Pie Crust</h4>
+                    <p>9-inch Crust</p>
+                    <span class="price">$2.99</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Pre-made Pie Crust', 2.99, 'baking4')">Add to
+                        Cart</button>
+                </div>
+ 
+                <div class="item-card pieCrust" id="baking5">
+                    <img src="../img/products/grahamcrust.jpeg" alt="Graham Cracker Pie Crust">
+                    <h4>Graham Cracker Pie Crust</h4>
+                    <p>9-inch Crust</p>
+                    <span class="price">$3.49</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Graham Cracker Pie Crust', 3.49, 'baking5')">Add to
+                        Cart</button>
+                </div>
+ 
+                <div class="item-card puddingMix" id="baking6">
+                    <img src="../img/products/vanillapudding.jpeg" alt="Vanilla Pudding Mix">
+                    <h4>Vanilla Pudding Mix</h4>
+                    <p>3.4 oz Box</p>
+                    <span class="price">$1.99</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Vanilla Pudding Mix', 1.99, 'baking6')">Add to
+                        Cart</button>
+                </div>
+ 
+                <div class="item-card puddingMix" id="baking7">
+                    <img src="../img/products/chocomix.webp" alt="Chocolate Pudding Mix">
+                    <h4>Chocolate Pudding Mix</h4>
+                    <p>3.4 oz Box</p>
+                    <span class="price">$1.99</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Chocolate Pudding Mix', 1.99, 'baking7')">Add to
+                        Cart</button>
+                </div>
+ 
+                <div class="item-card piePan" id="baking8">
+                    <img src="../img/products/piepan.jpeg" alt="Pie Pan">
+                    <h4>9-inch Pie Pan</h4>
+                    <p>Aluminum</p>
+                    <span class="price">$2.49</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('9-inch Pie Pan', 2.49, 'baking8')">Add to
+                        Cart</button>
+                </div>
+
             </div>
         </div>
         <div class="side">
@@ -105,8 +181,8 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            
-                        </tr> 
+
+                        </tr>
                     </tbody>
                     <tfoot>
                         <tr>
@@ -119,7 +195,7 @@
             </div>
 
             <button class="cart-buy" onclick="window.location.href='Cart.html'">Begin Checkout</button>
-            <button class="cart-buy" onclick="emptyCart()">Empty Cart</button> 
+            <button class="cart-buy" onclick="emptyCart()">Empty Cart</button>
         </div>
     </div>
 

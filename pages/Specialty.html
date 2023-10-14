@@ -7,6 +7,7 @@
     <title>GreenMart</title>
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <link rel="stylesheet" type="text/css" href="../css/shopping-cart.css" />
+    <link rel="stylesheet" type="text/css" href="../css/specialtyQuiz.css" />
     <script src="../js/cart.js"></script>
 </head>
 
@@ -41,35 +42,22 @@
     <div class="content-wrap">
         <div class="main">
             <h3>Specialty Shops</h3>
-
-            <div class="search-container">
-                <input type="text" class="search-input" placeholder="Search...">
-                <button class="search-button">Search</button>
-            </div>
-
-            <div class="item-wrapper">
-                <div class="item-card">
-                    <img src="../img/products/baguette.webp" alt="Baguette">
-                    <h4>Specialty French Bread</h4>
-                    <p> 14 oz</p>
-                    <span class="price">$1.83</span>
-                    <button class="add-to-cart">Add to Cart</button>
+            <button class="button" id= "startButton" onclick="displayQuestionContainer()">Answer questions for a $100 discount!</button> 
+            <div class="quiz-container" id="quiz">
+                <div class="question" id="question1">Are you a student?</div>
+                <div class="options">
+                    <label class="option"><input type="radio" name="answer" value="yes"> Yes</label>
+                    <label class="option"><input type="radio" name="answer" value="no"> No</label>
                 </div>
-                <div class="item-card">
-                    <img src="../img/products/cheese.webp" alt="Cheese">
-                    <h4>Emmi Le Gruyère Cheese </h4>
-                    <p> 6 oz</p>
-                    <span class="price">$7.17</span>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <div class="item-card">
-                    <img src="../img/products/wine.webp" alt="Wine">
-                    <h4>San Antonio Cardinale Wine</h4>
-                    <p> 750 ML</p>
-                    <span class="price">$14.98</span>
-                    <button class="add-to-cart">Add to Cart</button>
+                <div id="errorMessage" style="color: red;"></div>
+                
+                <div class="button-container">
+                    <button class="button" onclick="skipQuestion()">Skip</button>
+                    <button class="button" onclick="nextQuestion()">Next</button>
                 </div>
             </div>
+            <div class="special-offerPositive" id="specialOfferPositive"></div>
+            <div class="special-offerNegative" id="specialOfferNegative"></div>
         </div>
         <div class="side">
             <h1 id="cart">Shopping Cart</h1>
@@ -105,6 +93,7 @@
             <button class="cart-buy" onclick="window.location.href='Cart.html'">Begin Checkout</button>
             <button class="cart-buy" onclick="emptyCart()">Empty Cart</button> 
         </div>
+        <script src="../js/quiz.js"></script>
     </div>
 
     <div class="footer">

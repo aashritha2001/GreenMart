@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <link rel="stylesheet" type="text/css" href="../css/shopping-cart.css" />
     <link rel="stylesheet" type="text/css" href="../css/filter.css" />
-    <script src="../js/filter.js"></script>
     <script src="../js/cart.js"></script>
 </head>
 
@@ -62,7 +61,7 @@
             </div>
 
             <div class="item-wrapper">
-                <div class="item-card seasonal" id="fresh1">
+                <div class="item-card vegetables" id="fresh1">
                     <img src="../img/products/Tomato.jpeg" alt="Fresh Tomato on the Vine">
                     <h4>Fresh Tomato on the Vine</h4>
                     <p> Bag (1.9 lbs/Bag Est.)</p>
@@ -74,7 +73,7 @@
                     </div>
                     <button class="add-to-cart" onclick="addToCart('Fresh Tomato on the Vine', 2.83, 'fresh1')">Add to Cart</button>
                 </div>
-                <div class="item-card fruits" id="fresh2">
+                <div class="item-card fruits seasonal" id="fresh2">
                     <img src="../img/products/strawberries.jpeg" alt="Fresh Strawberries">
                     <h4>Fresh Strawberries</h4>
                     <p> 2 lb</p>
@@ -86,7 +85,7 @@
                     </div>
                     <button class="add-to-cart" onclick="addToCart('Fresh Strawberries', 5.27, 'fresh2')">Add to Cart</button>
                 </div>
-                <div class="item-card fruits" id="fresh3">
+                <div class="item-card fruits seasonal" id="fresh3">
                     <img src="../img/products/orange.jpeg" alt="Orange">
                     <h4>Orange</h4>
                     <p> Bag (2 lb)</p>
@@ -97,7 +96,120 @@
                         <span class="up" onClick='increaseCount(event, this)'>+</span>
                     </div>
                     <button class="add-to-cart" onclick="addToCart('Orange', 4.28, 'fresh3')">Add to Cart</button>
+                </div>
+                <div class="item-card fruits" id="fresh4">
+                    <img src="../img/products/apples.avif" alt="Fresh Apple">
+                    <h4>Fresh Apple</h4>
+                    <p>Bag (2 lbs/Bag Est.)</p>
+                    <span class="price">$3.50</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Fresh Apple', 3.50, 'fresh4')">Add to Cart</button>
                 </div> 
+                <div class="item-card vegetables" id="fresh5">
+                    <img src="../img/products/broccoli.avif" alt="Fresh Broccoli">
+                    <h4>Fresh Broccoli</h4>
+                    <p>Bundle (1 lb Est.)</p>
+                    <span class="price">$2.20</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Fresh Broccoli', 2.20, 'fresh5')">Add to Cart</button>
+                </div>
+                <div class="item-card precut fruits" id="fresh6">
+                    <img src="../img/products/cutpineapples.webp" alt="Precut Mixed Vegetables">
+                    <h4>Precut Pineapples</h4>
+                    <p>Bag (12 oz/Bag Est.)</p>
+                    <span class="price">$2.99</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Precut Pineapples', 2.99, 'fresh6')">Add to Cart</button>
+                </div>
+                <div class="item-card flowers rollbacks" id="fresh7">
+                    <img src="../img/products/rose.avif" alt="Fresh Rose Bouquet">
+                    <h4>Fresh Rose Bouquet</h4>
+                    <p>Arrangement (12 Roses Est.)</p>
+                    <span class="price">$15.99</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Fresh Rose Bouquet', 15.99, 'fresh7')">Add to Cart</button>
+                </div>
+                <div class="item-card salsadips rollbacks" id="fresh8">
+                    <img src="../img/products/spinachdip.webp" alt="Chunky Salsa">
+                    <h4>Spinach Artichoke Dip</h4>
+                    <p>(12oz)</p>
+                    <span class="price">$3.75</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Spinach Artichoke Dip', 3.75, 'fresh8')">Add to Cart</button>
+                </div>
+
+                <div class="item-card seasonal vegetables newitems" id="fresh9">
+                    <img src="../img/products/pumpkin.avif" alt="Fresh Pumpkin">
+                    <h4>Fresh Pumpkin</h4>
+                    <p>Each (5 lbs Est.)</p>
+                    <span class="price">$4.50</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Fresh Pumpkin', 4.50, 'fresh9')">Add to Cart</button>
+                </div>
+
+                <div class="item-card precut fruits newitems" id="fresh10">
+                    <img src="../img/products/fruitsalad.avif" alt="Fruit Salad">
+                    <h4>Fruit Salad</h4>
+                    <p>Pack (1 lb/Pack Est.)</p>
+                    <span class="price">$5.99</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Fruit Salad', 5.99, 'fresh10')">Add to Cart</button>
+                </div>
+
+                <div class="item-card newitems vegetables" id="fresh11">
+                    <img src="../img/products/onions.avif" alt="New Item 1">
+                    <h4>Onions</h4>
+                    <p>1 Bag (10 pounts)</p>
+                    <span class="price">$9.99</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Onions', 9.99, 'fresh11')">Add to Cart</button>
+                </div>
+                
+                <div class="item-card rollbacks vegetables" id="fresh12">
+                    <img src="../img/products/carrots.avif" alt="Carrots">
+                    <h4>Carrots</h4>
+                    <p>3 pounds, 10 pieces</p>
+                    <span class="price">$7.49</span>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1" class="item-count">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Carrots', 7.49, 'fresh12')">Add to Cart</button>
+                </div>
+
             </div>
 
         </div>
@@ -142,6 +254,7 @@
             <p>Aashritha Ananthula, AXA180116</p>
         </div>
     </div>
+    <script src="../js/filter.js"></script>
 </body>
 
 </html>

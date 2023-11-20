@@ -8,7 +8,7 @@ function filterSelection(selected) {
     if (selected == "all") selected = "";
     for (i = 0; i < x.length; i++) {
         removeClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+        if (x[i].className.indexOf(selected) > -1) addClass(x[i], "show");
 
     }
 }
